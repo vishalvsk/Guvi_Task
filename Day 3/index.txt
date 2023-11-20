@@ -1,0 +1,13 @@
+  How to compare the two json have the same propertise without order 
+  1 - 
+  let obj 1 = {
+    "name" : "person 1 ,
+    "age"  " 5
+  }
+
+   let obj 2 = {
+    "age"  " 5,
+    "name" : "person 2"
+  }
+
+ans -  

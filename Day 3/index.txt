@@ -10,4 +10,6 @@
     "name" : "person 2"
   }
 
-ans -  
+ans -  To compare JSON data in a meaningful way, you have to compare the data structures,
+ and not the text contents. Checking whether two JSON documents are equal or
+  not is relatively simple and can be done using a function like isEqual from Lodash

@@ -10,6 +10,12 @@
     "name" : "person 2"
   }
 
-ans -  To compare JSON data in a meaningful way, you have to compare the data structures,
- and not the text contents. Checking whether two JSON documents are equal or
-  not is relatively simple and can be done using a function like isEqual from Lodash
+ans -  
+To compare two JSON objects without considering the order of their properties, you can follow these steps in most programming languages:
+
+Convert JSON strings to Objects: Parse the JSON strings into objects or associative arrays in your language.
+
+Sort Properties: Sort the properties of both objects before comparing. This ensures that even if the properties are in a different order, the comparison will still work correctly.
+
+Compare: After sorting the properties, compare the sorted objects to check for equality.
+

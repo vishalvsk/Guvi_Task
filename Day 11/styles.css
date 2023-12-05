@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  background-color: hsl(0, 0%, 90%);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.5fr 1.3fr 0.8fr;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "sidebar input input input"
+    "sidebar box1 box2 box3"
+    "sidebar footer footer footer";
+  grid-gap: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.429);
+  grid-area: navbar;
+  text-align: center;
+}
+.Boxinput {
+  background: black;
+  grid-area: input;
+  border-radius: 15px;
+  border-width: 50%;
+  grid-gap: 3.2rem;
+}
+.box1 {
+  background: black;
+  grid-area: box1;
+  border-radius: 15px;
+}
+.box2 {
+  background: black;
+  grid-area: box2;
+  border-radius: 15px;
+}
+.box3 {
+  background: black;
+  grid-area: box3;
+  border-radius: 15px;
+}
+.footer {
+  background: black;
+  grid-area: footer;
+  border-radius: 15px;
+}
+.sideBox {
+  background: black;
+  grid-area: sidebar;
+  border-radius: 15px;
+  position: sticky;
+}

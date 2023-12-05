@@ -1,0 +1,40 @@
+.traffic-light {
+  width: 100px;
+  height: 300px;
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.red,
+.yellow,
+.green {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+.square {
+  width: 280px;
+  height: 80px;
+  background-color: rgb(228, 228, 228);
+  box-shadow: black;
+  border-radius: 10%;
+  overflow: scroll;
+}
+
+.red:hover {
+  background-color: red;
+}
+
+.yellow:hover {
+  background-color: yellow;
+}
+
+.green:hover {
+  background-color: green;
+}

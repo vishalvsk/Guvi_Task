@@ -1,0 +1,29 @@
+@media all {
+  img {
+    border-style: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  ::placeholder {
+    color: var(--fgColor-muted, var(--color-fg-subtle));
+    opacity: 1;
+  }
+  @media (forced-colors: active) {
+    *:focus {
+      outline: solid 1px transparent;
+    }
+  }
+}
+
+@media all {
+  @media (prefers-color-scheme: dark) {
+    [data-color-mode="auto"][data-dark-theme*="dark"] ::selection {
+      background-color: var(--bgColor-accent-muted, var(--color-accent-muted));
+    }
+  }
+}
+
+.kzRgrI {
+  max-width: 100%;
+}

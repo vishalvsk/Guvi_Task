@@ -8,7 +8,7 @@
 .container {
   display: grid;
   height: 100vh;
-  background-color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 11%, 88%);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.4fr 1.5fr 1.3fr 0.8fr;
   grid-template-areas:
@@ -16,7 +16,7 @@
     "sidebar input input input"
     "sidebar box1 box2 box3"
     "sidebar footer footer footer";
-  grid-gap: 5rem;
+  grid-gap: 3.5rem 1.5rem;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -25,37 +25,82 @@ nav {
   background: rgba(0, 0, 0, 0.429);
   grid-area: navbar;
   text-align: center;
+  /* height: 80px; */
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 .Boxinput {
-  background: black;
+  background: rgba(0, 0, 0, 0.354);
+  background-color: rgba(20, 17, 17, 0.95);
   grid-area: input;
   border-radius: 15px;
-  border-width: 50%;
+  border-width: 10%;
   grid-gap: 3.2rem;
+  height: 36px;
+  width: 469px;
+  position: absolute;
+  top: 120px;
+  left: 340px;
+  bottom: 200px;
+}
+::placeholder {
+  color: rgba(230, 221, 221, 0.998);
+  opacity: 100; /* Firefox */
 }
 .box1 {
   background: black;
   grid-area: box1;
   border-radius: 15px;
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: 200px;
+  left: 300px;
 }
 .box2 {
   background: black;
   grid-area: box2;
   border-radius: 15px;
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: 200px;
+  left: 500px;
 }
 .box3 {
   background: black;
   grid-area: box3;
   border-radius: 15px;
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: 200px;
+  left: 700px;
 }
 .footer {
   background: black;
   grid-area: footer;
   border-radius: 15px;
+  height: 100px;
+  width: 544px;
+  position: absolute;
+  top: 380px;
+  left: 300px;
 }
 .sideBox {
   background: black;
   grid-area: sidebar;
   border-radius: 15px;
-  position: sticky;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  height: 375px;
+  width: 250px;
+}
+.fa-brands {
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }

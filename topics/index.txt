@@ -1,0 +1,63 @@
+Introduction to web Browser Wars DOM tree CSSOM tree,
+Browser internals - HTML parser,
+CSS parser,  JavaScript V8 engine, 
+internals IP – MAC address – Ports & Evolution of HTTP,
+HTTP Methods
+How the Server looks at the URL
+Request & Response cycle
+HTML Browser view - Debugger, Inspect,
+Browser js vs Node js
+Data types
+Copy by value and Copy by reference
+Window & document object
+Introduction to Array
+Array and JSON iteration
+XMLHttpRequest
+Hoisting & scope
+Introduction to functions
+function & return keyword
+types of function
+var vs let vs const
+block scoping
+spread & rest operators
+array & object destructure
+Object property shorthand
+Template literals
+Arrow functions
+Understanding the basics of prototype
+What is classes in js?
+constructor
+need of setters/getters
+use of this key word in classes
+Map, Reduce,  Filter
+What is HTML & Why use it?
+Basic Tags
+HTML vs HTML5
+div vs section vs article
+div vs span
+inline vs block elements
+HTML Forms
+Input elements and attributes
+Form submit
+What is CSS?
+ways to use CSS 
+property & value 
+class vs id 
+use of important 
+display property: inline, block
+Intro to pseudo-classes (link, visited,hover, active)
+box model: padding, margin, border 
+Grid
+Flex - display, direction, wrap, flex-flow, justify-content, align-content
+position property: fixed, static, relative, absolute, sticky
+parent inherit 
+gradient
+overflow - hidden, scroll, auto, visible
+dropbox
+measurements 
+fonts 
+icons 
+media query
+What is RWD?
+What is the mobile-first approach?
+Bootstrap

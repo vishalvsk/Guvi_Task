@@ -52,6 +52,8 @@ fetch("https://restcountries.com/v3.1/all")
       console.log("Capital:", country.capital);
       console.log("Flag:", country.flags.png);
       console.log("--------------------------");
+      console.log("--------------------------");
+      console.log("--------------------------");
     });
   })
   .catch((error) => {

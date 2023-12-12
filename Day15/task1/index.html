@@ -2,47 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Form</title>
+    <title>Responsive Form to Table</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form id="myForm">
-      <div class="form-group">
-        <label for="firstName" class="fname">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required />
-      </div>
-      <div class="form-group">
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required />
-      </div>
-      <div class="form-group">
+    <div class="container">
+      <h1 id="title">Form</h1>
+      <p id="description">
+        Form Explanation :- <br />
+        A form page built with HTML and CSS is a structured layout that allows
+        users to input and submit information.Forms in HTML are structures used
+        to collect user input. They consist of elements like text fields,
+        checkboxes, radio buttons, dropdown menus, and buttons. The form tag
+        encloses these input elements and includes attributes like action
+        (specifies where to send the form data)
+        <br />
+        <br />
+        Table Explanation :- <br />
+        Tables in HTML are structures to display data in rows and columns. They
+        use tags like table, tr for rows, th for headers, and td for cells.
+        Tables organize data into a grid format, making it readable and
+        structured.
+      </p>
+      <form id="form" class="form form-group">
         <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required />
-      </div>
-      <div class="form-group">
-        <label for="pincode">Pincode:</label>
-        <input type="text" id="pincode" name="pincode" required />
-      </div>
-      <div class="form-group">
+        <div class="form-group">
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="10"
+            placeholder="enter the address"
+          ></textarea>
+        </div>
+        <label for="firstName">first name:</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="enter a first name"
+        /><br /><br />
+
+        <label for="lastName">last name:</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="enter a last name..."
+        /><br /><br />
+
+        <label for="pincode">Pin Code:</label>
+        <div class="form">
+          <input
+            type="text"
+            id="pincode"
+            name="pincode"
+            placeholder="enter the pincode"
+          />
+        </div>
+        <br /><br />
+
         <label for="gender">Gender:</label>
-        <select id="gender" name="gender" required>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      <div class="form-group">
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" />
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other" />
+
+        ><br /><br />
+
         <label for="state">State:</label>
-        <input type="text" id="state" name="state" required />
-      </div>
-      <div class="form-group">
+        <input
+          type="text"
+          id="state"
+          name="state"
+          placeholder="enter the name of the state"
+        /><br /><br />
+
         <label for="country">Country:</label>
-        <input type="text" id="country" name="country" required />
-      </div>
-      <div class="form-group">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          placeholder="enter the name of the country"
+        /><br /><br />
+
+        <button
+          class="btn btn-primary"
+          type="submit"
+          id="submit"
+          value="Submit"
+        >
+          Submit
+        </button>
+      </form>
+
+      <table id="myTable" class="table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Pin Code</th>
+            <th>Gender</th>
+            <th>State</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
 
     <script src="./script.js"></script>
     <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>

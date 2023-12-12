@@ -1,60 +1,17 @@
-let displayValue = "0";
-let pendingValue = "";
-let operation = null;
-
-function updateDisplay() {
-  document.getElementById("display").innerText = displayValue;
-}
-
-function appendNumber(number) {
-  if (displayValue === "0") {
-    displayValue = number;
-  } else {
-    displayValue += number;
-  }
-  updateDisplay();
-}
-
-function clearDisplay() {
-  displayValue = "0";
-  pendingValue = "";
-  operation = null;
-  updateDisplay();
-}
-
-function setOperation(op) {
-  if (operation !== null) {
-    calculate();
-    pendingValue = displayValue;
-    displayValue = "0";
-  } else {
-    pendingValue = displayValue;
-    displayValue = "0";
-  }
-  operation = op;
-}
-
-function calculate() {
-  const currentValue = parseFloat(displayValue);
-  const pending = parseFloat(pendingValue);
-
-  if (operation === "+") {
-    displayValue = (pending + currentValue).toString();
-  } else if (operation === "-") {
-    displayValue = (pending - currentValue).toString();
-  } else if (operation === "*") {
-    displayValue = (pending * currentValue).toString();
-  } else if (operation === "/") {
-    if (currentValue === 0) {
-      displayValue = "Error";
+let string = "";
+let buttons = document.querySelectorAll(".button");
+Array.from(buttons).forEach((button) => {
+  button.addEventListener("click", (e) => {
+    if (e.target.innerHTML == "=") {
+      string = eval(string);
+      document.querySelector("input").value = string;
+    } else if (e.target.innerHTML == "C") {
+      string = "";
+      document.querySelector("input").value = string;
     } else {
-      displayValue = (pending / currentValue).toString();
+      console.log(e.target);
+      string = string + e.target.innerHTML;
+      document.querySelector("input").value = string;
     }
-  }
-
-  pendingValue = "";
-  operation = null;
-  updateDisplay();
-}
-
-updateDisplay();
+  });
+});

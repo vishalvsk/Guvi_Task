@@ -8,7 +8,7 @@
 .container {
   display: grid;
   height: 100vh;
-  background: rgb(29%, 39%, 39%);
+  background: #61ede46e;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1.5fr 1.3fr 0.8fr;
   grid-template-areas:
@@ -22,14 +22,15 @@
 }
 
 nav {
-  background: rgba(0, 0, 0, 0.429);
+  background: #2f3d46;
   grid-area: navbar;
   text-align: center;
-  /* height: 80px; */
-  background-color: grey;
+  height: 70px;
+  background-color:#2f3d46;
   display: flex;
   justify-content: center;
   padding: 20px;
+  color: white;
 }
 .Boxinput {
   background: rgba(0, 0, 0, 0.354);
@@ -44,6 +45,7 @@ nav {
   top: 120px;
   left: 419px;
   bottom: 200px;
+  color: white;
 }
 ::placeholder {
   color: rgba(230, 221, 221, 0.998);

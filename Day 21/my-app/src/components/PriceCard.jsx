@@ -8,7 +8,7 @@ const PriceCard = ({ price, plans, title }) => {
 
   return (
     <div className="price-card">
-      <h4>${title}</h4>
+      <p>{title}</p>
 
       <h2>${price}/months</h2>
       <div className="plans">

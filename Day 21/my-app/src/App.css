@@ -11,8 +11,8 @@ body {
   position: relative;
   gap: 15px;
 }
-.price-card h4 {
-  background: red;
+.price-card P {
+  background:white;
 }
 
 .price-card {

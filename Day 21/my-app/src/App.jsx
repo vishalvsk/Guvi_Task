@@ -3,10 +3,10 @@ import PriceCard from "./components/PriceCard";
 import "./App.css";
 
 const App = () => {
-  <h1>free</h1>;
+  // <h1>free</h1>;
   const priceRanges = [
     {
-      title: "free",
+      title: "FREE",
       price: 0,
       plans: [
         { name: "single user", available: true },
@@ -20,7 +20,7 @@ const App = () => {
       ],
     },
     {
-      title: "plus",
+      title: "PLUS",
       price: 9,
       plans: [
         { name: "single user", available: true },
@@ -34,7 +34,7 @@ const App = () => {
       ],
     },
     {
-      title: "pro",
+      title: "PRO",
       price: 49,
       plans: [
         { name: "single user", available: true },

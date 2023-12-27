@@ -3,7 +3,7 @@ import PriceCard from "./components/PriceCard";
 import "./App.css";
 
 const App = () => {
-    <h1>Responsive web site</h1>
+    // <h1>Responsive web site</h1>
   // <h1>free</h1>;
   const priceRanges = [
     {

@@ -5,29 +5,35 @@ body {
 .price-cards {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 20px;
   background: white;
   position: relative;
   gap: 15px;
 }
 .price-card P {
-  background:white;
+  background: white;
+  text-align: center;
+}
+.price-card hr {
+  color: rgba(0, 0, 0, 0.524);
 }
 
 .price-card {
-  text-align: center;
+  text-align: start;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 300px;
+  border-radius: 15px;
+  width: 270px;
   height: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.029);
+  /* color: rgba(0, 0, 0, 0.307); */
 }
 
 .price-card h2 {
   margin-bottom: 15px;
-  /* color: white; */
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
 .plans {
@@ -39,11 +45,12 @@ body {
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
+  padding: 8px 70px;
+  border-radius: 9px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 150px;
+  width: 200px;
+  margin-left: 50px;
 }
 
 .subscribe-btn:hover {
@@ -55,4 +62,20 @@ body {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.price-card h5 {
+  display: flex;
+  align-items: center;
+}
+
+.price-card h5 span {
+  margin-right: 5px;
+}
+.price-card h5 span {
+  color: #666;
+}
+
+.price-card h5 span[style*="#000"] {
+  color: #000; 
 }

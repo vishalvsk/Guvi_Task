@@ -73,7 +73,7 @@ body {
   margin-right: 5px;
 }
 .price-card h5 span {
-  color: #666;
+  color: #666; 
 }
 
 .price-card h5 span[style*="#000"] {

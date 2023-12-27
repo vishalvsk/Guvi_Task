@@ -1,6 +1,7 @@
 import React from "react";
 
 const PriceCard = ({ price, plans, title }) => {
+  
   console.log(title);
   const getMark = (value) => {
     return value ? "✔️" : "❌";

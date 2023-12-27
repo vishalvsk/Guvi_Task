@@ -1,13 +1,15 @@
 import React from "react";
 
 const PriceCard = ({ price, plans, title }) => {
+  console.log(title);
   const getMark = (value) => {
     return value ? "✔️" : "❌";
   };
 
   return (
     <div className="price-card">
-      {/* <h4>${title}</h4> */}
+      <h4>${title}</h4>
+
       <h2>${price}/months</h2>
       <div className="plans">
         {plans.map((plan, index) => (

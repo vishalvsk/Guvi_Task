@@ -3,10 +3,10 @@ import PriceCard from "./components/PriceCard";
 import "./App.css";
 
 const App = () => {
-  <h1>free</h1>
+  <h1>free</h1>;
   const priceRanges = [
     {
-      title: { name: "free" },
+      title: "free",
       price: 0,
       plans: [
         { name: "single user", available: true },
@@ -20,7 +20,7 @@ const App = () => {
       ],
     },
     {
-      title: { name: "plus" },
+      title: "plus",
       price: 9,
       plans: [
         { name: "single user", available: true },
@@ -34,7 +34,7 @@ const App = () => {
       ],
     },
     {
-      title: { name: "pro" },
+      title: "pro",
       price: 49,
       plans: [
         { name: "single user", available: true },
@@ -52,12 +52,15 @@ const App = () => {
   return (
     <div className="price-cards">
       {priceRanges.map((range, index) => (
-        <PriceCard key={index} price={range.price} plans={range.plans} />
+        <PriceCard
+          key={index}
+          price={range.price}
+          plans={range.plans}
+          title={range.title}
+        />
       ))}
     </div>
   );
 };
 
 export default App;
-
-

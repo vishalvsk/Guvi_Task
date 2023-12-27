@@ -1,18 +1,18 @@
 /* styles.css */
-body{
+body {
   background: rgb(22, 18, 241);
 }
 .price-cards {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   background: white;
   position: relative;
   gap: 15px;
 }
-.price-card h4{
-  background:red;
+.price-card h4 {
+  background: red;
 }
 
 .price-card {
@@ -48,4 +48,11 @@ body{
 
 .subscribe-btn:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .price-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }

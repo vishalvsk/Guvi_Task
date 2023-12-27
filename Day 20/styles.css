@@ -1,0 +1,35 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the card */
+.card {
+  width: 300px; /* Adjust this width as needed */
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cardImage {
+  width: 100%;
+  height: auto;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+#cardTitle {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+#cardDescription {
+  font-size: 1rem;
+  color: #555;
+}

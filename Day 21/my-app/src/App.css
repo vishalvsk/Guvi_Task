@@ -20,7 +20,6 @@ body {
 }
 
 .price-card {
-  text-align: start;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 15px;
@@ -73,9 +72,9 @@ body {
   margin-right: 5px;
 }
 .price-card h5 span {
-  color: #666; 
+  color: #666;
 }
 
 .price-card h5 span[style*="#000"] {
-  color: #000; 
+  color: #000;
 }

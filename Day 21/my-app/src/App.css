@@ -1,13 +1,13 @@
 /* styles.css */
 body {
-  background: rgb(22, 18, 241);
+ background: rgb(15, 37, 238);
 }
 .price-cards {
   display: flex;
   justify-content: center;
   /* align-items: center; */
   margin-top: 20px;
-  background: white;
+  background: rgb(15, 37, 238);
   position: relative;
   gap: 15px;
 }
@@ -26,6 +26,7 @@ body {
   width: 270px;
   height: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.029);
+  background-color: white;
   /* color: rgba(0, 0, 0, 0.307); */
 }
 

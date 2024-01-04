@@ -121,9 +121,9 @@ button.delete-btn:hover {
     color: red;
   }
 }
-/* .todo-item.NotCompleted {
+.todo-item.NotCompleted {
   background-color: red;
-} */
+}
 .todo-app h2 {
   font-size: 20px;
   text-align: center;

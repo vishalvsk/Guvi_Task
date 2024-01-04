@@ -116,10 +116,8 @@ button.delete-btn:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.todo-item.completed {
-  button {
-    color: red;
-  }
+.todo-item.completed button {
+      color: red;
 }
 .todo-item.NotCompleted {
   background-color: red;

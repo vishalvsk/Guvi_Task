@@ -1,0 +1,44 @@
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  /* Example: Adjust product layout for smaller screens */
+  .product {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Example: Adjust cart layout for smaller screens */
+  .cart {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Styling for product list */
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  display: inline-block;
+}
+
+/* Styling for cart items */
+.cart {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  display: inline-block;
+}
+
+/* Example: Style for product image */
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Other styles for text, buttons, etc. can be added here */

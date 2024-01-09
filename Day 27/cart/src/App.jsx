@@ -1,12 +1,13 @@
 import React from "react";
-import { CartProvider } from "./components/cartContext";
-import ProductList from "./components/productList";
+import CartPage from "./components/CartPage";
+import "./App.css"; // Import your CSS file here
 
 const App = () => {
   return (
-    <CartProvider>
-      <ProductList />
-    </CartProvider>
+    <div className="app-container">
+      <h1>Shopping Cart</h1>
+      <CartPage />
+    </div>
   );
 };
 

@@ -84,6 +84,8 @@ const UserList = () => {
     }));
   };
 
+  //  submit details 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (editingUserId) {

@@ -1,0 +1,67 @@
+you can see all the anwsers of questions in images folder 
+Question 1. Find the title of each film:
+Ans - SELECT Title FROM Movies;
+
+2. Find the director of each film:
+Ans - SELECT Director FROM Movies;
+
+3. Find the title and director of each film:
+Ans - SELECT Title, Director FROM Movies;
+
+4. Find the title and year of each film:
+Ans - SELECT Title, Year FROM Movies;
+
+5. Find all the information about each film:
+Ans - SELECT * FROM Movies;
+ 
+6. Find the movie with a row id of 6:
+Ans - SELECT * FROM Movies WHERE Id = 6;
+
+7. Find the movies released in the years between 2000 and 2010:
+Ans - SELECT * FROM Movies WHERE Year BETWEEN 2000 AND 2010;
+
+8. Find the movies not released in the years between 2000 and 2010:
+Ans - SELECT * FROM Movies WHERE Year NOT BETWEEN 2000 AND 2010;
+
+9. Find the first 5 Pixar movies and their release year:
+Ans - SELECT Title, Year 
+FROM Movies 
+WHERE Director IN ('John Lasseter', 'Pete Docter', 'Andrew Stanton', 'Brad Bird', 'Lee Unkrich')
+LIMIT 5;
+
+10. Find all the Toy Story movies:
+Ans - SELECT * FROM Movies WHERE Title LIKE 'Toy Story%';
+
+11. Find all the movies directed by John Lasseter:
+Ans - SELECT * FROM Movies WHERE Director = 'John Lasseter';
+
+12. Find all the movies (and director) not directed by John Lasseter:
+Ans - SELECT * FROM Movies WHERE Director != 'John Lasseter';
+
+13. Find all the WALL-* movies:
+Ans - SELECT * FROM Movies WHERE Title LIKE 'WALL-%';
+
+14. List all directors of Pixar movies (alphabetically), without duplicates:
+Ans - SELECT DISTINCT Director FROM movies
+ORDER BY Director;
+
+15. List the last four Pixar movies released (ordered from most recent to least):
+Ans - SELECT * FROM movies
+ORDER BY Year DESC
+LIMIT 4;
+
+16. List the last four Pixar movies released (ordered from most recent to least):
+Ans - SELECT * FROM movies
+ORDER BY Title ASC
+LIMIT 5;
+
+17. List the next five Pixar movies sorted alphabetically:
+Ans - SELECT * FROM movies
+ORDER BY Title ASC
+LIMIT 5 OFFSET 5;
+
+18. List all the Canadian cities and their populations:
+Ans - SELECT City, Population FROM City
+WHERE Country = 'Canada';
+
+ 

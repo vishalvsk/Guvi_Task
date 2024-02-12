@@ -143,7 +143,7 @@ app.post("/createBooking", function (req, res) {
         }
       });
     }
-  });
+  });0
   if (availableRooms.length == 0) {
     res
       .status(400)

@@ -1,31 +1,25 @@
-const { writeFile } = require("node:fs/promises");
-const { readFile } = require("node:fs/promises");
+const http = require("http");
 
-async function createAndWriteDataIntoFile(curr_date = new Date()) {
-  try {
-    var fileData = {
-      date: curr_date.getDate(),
-      hour: curr_date.getHours(),
-      minutes: curr_date.getMinutes(),
-    };
-    await writeFile(
-      `${fileData.date}-${fileData.hour}-${fileData.minutes}.txt`,
-      curr_date.toString()
-    );
-  } catch (err) {
-    console.error(err);
+// Create a server object
+const server = http.createServer((req, res) => {
+  // Set the response header
+  res.writeHead(200, { "Content-Type": "text/plain" });
+
+  // Check if the requested URL is "/"
+  if (req.url === "/") {
+    // If it is, send "Hello Vishal" as the response
+    res.end("Hello Vishal");
+  } else {
+    // If it's not, send a 404 Not Found response
+    res.writeHead(404);
+    res.end("404 Not Found");
   }
-}
+});
 
-createAndWriteDataIntoFile(new Date());
+// Define the port number to listen on
+const port = 3000;
 
-// Reading a file:
-async function readDataFromFile() {
-  try {
-    const result = await readFile("./27-13-32.txt");
-    console.log(result.toString());
-  } catch (error) {
-    console.log(error);
-  }
-}
-readDataFromFile();
+// Start the server and listen on the specified port
+server.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
